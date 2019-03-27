@@ -38,7 +38,6 @@ source.pipe(exhaustMap(e => timer(1000))).subscribe(v => {
 });
 
 
-
 function backoff(maxTries, ms) {
   // Note the advantage of pipe, we can create a reuseable pipe
   return pipe(
